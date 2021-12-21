@@ -1,8 +1,8 @@
 # TestForRedRift
 
-A dissolve shader for Unity Shader Graph and Universal Render Pipeline.
+A Test card game for Red Rift.
 
-![Dissolve Banner](banner.jpg)
+![Test Banner](Banner.jpg)
 
 ## Overview
 
