@@ -29,13 +29,13 @@ Will deal all cards to player hand in rotation with using Dotween, deal amount d
 - If cards dropped not on drag zone, return back to hand
 - Card image downloaded randomly on game start. Image download script can be found on Card with name Image
 
-#### Assets used
-- Dotween
-- UI Extensions
-
 ### Change Button
 - Button changes cards values in drag zone randomly between -2 to 9
 - If Card health < 0, card will be destroyed
+
+#### Assets used
+- Dotween
+- UI Extensions
 ## Software
 
 This project was created using Unity 2021.2.5f1 and Universal Render Pipeline 12.1.2.
