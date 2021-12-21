@@ -11,21 +11,19 @@ namespace Cards
     public sealed class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler,
         IPointerExitHandler
     {
-        [Header("Move Animation Parameters")] 
+        [Header("Animation Parameters")] 
         [SerializeField] private float moveDuration = 0.25f;
-
         [SerializeField] private float destroyAnimationDuration = 0.5f;
 
+        [Header("References")]
         [SerializeField] private Ease moveEase;
         [SerializeField] private CardUI cardUI;
-        
 
 
         private Vector2 _initialPosition;
         private bool _isHovering;
         private Camera _camera;
         private CardStats _cardStats;
-        
 
         public bool CanInteract { get; private set; }
         public bool CanDrag { get; private set; }
@@ -49,6 +47,7 @@ namespace Cards
         {
             if (!CanDrag) return;
             ForbidHovers();
+            cardUI.ScaleDown(_initialPosition.y);
             cardUI.SetMaterial(true);
         }
 
@@ -144,7 +143,6 @@ namespace Cards
             {
                 Destroy(gameObject);
             }));
-            
         }
 
         private void OnDestroy() => OnCardDestroy -= Die;
