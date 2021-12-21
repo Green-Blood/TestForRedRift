@@ -22,8 +22,10 @@ Will deal all cards to player hand in rotation with using Dotween, deal amount d
 - Can be hovered, to see them.
 - Can be dragged to Drag zone 
 - Card has stats
-- On Card drag green outline will be seen
+- On Card drag green outline will be seen 
+
 ![Card with outline](Outline.png)
+
 - If cards dropped not on drag zone, return back to hand
 - Card image downloaded randomly on game start. Image download script can be found on Card with name Image
 
