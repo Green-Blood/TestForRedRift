@@ -2,7 +2,7 @@
 
 A Test card game for Red Rift.
 
-![Test Banner](Banner.jpg)
+![Test Banner](Banner.png)
 
 ## Overview
 
